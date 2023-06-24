@@ -10,5 +10,7 @@ export class SigninComponent {
   passwordInput: string = '';
 
   onSubmit() {
+    console.log(this.emailInput)
+    console.log(this.passwordInput)
   }
 }
