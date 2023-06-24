@@ -1,0 +1,27 @@
+<div class="container">
+  <form>
+    <div class="mb-3">
+      <label for="emailInput" class="form-label">Email Address</label>
+      <input
+        type="email"
+        class="form-control"
+        aria-describedby="email"
+        id="emailInput"
+        [(ngModel)]="emailInput"
+        name="emailInput"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="passwordInput" class="form-label">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        aria-describedby="password"
+        id="passwordInput"
+        name="passwordInput"
+        [(ngModel)]="passwordInput"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+  </form>
+</div>

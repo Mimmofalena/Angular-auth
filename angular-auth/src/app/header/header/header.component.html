@@ -1,1 +1,11 @@
-<p>header works!</p>
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+  <li ngbNavItem class="">
+    <button ngbNavLink>Sign in</button>
+    <ng-template ngbNavContent><app-signin></app-signin></ng-template>
+  </li>
+  <li ngbNavItem>
+    <button ngbNavLink>Login</button>
+    <ng-template ngbNavContent>Login Page</ng-template>
+  </li>
+</ul>
+<div [ngbNavOutlet]="nav"></div>
